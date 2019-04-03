@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  get 'homepage/home'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root 'homepage#home'
+  match 'create_user', to: 'homepage#create_user', via: [:post]
 end
