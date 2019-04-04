@@ -1,6 +1,7 @@
 <div class="container">
   <div class="row justify-content-center align-items-center" style="height: 100vh;">
     <div class="col-10 col-md-8">
+      <%= flash_messages %>
       <h1 class="text-center">Enter Username</h1>
       <%= form_with url: "/create_user" do |form|%>
         <div class="form-group">
